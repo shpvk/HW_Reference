@@ -163,7 +163,11 @@ int main() {
     {
         std::cout << "\n1.Show  2.Add  3.Search  0.Exit\n";
         std::cout << "Choice: ";
-        int m; if (!(std::cin >> m)) return 0;
+        int m; 
+        if (!(std::cin >> m))
+        {
+             return 0;
+        }
         if (m == 0) 
         {
             std::cout << "Bye\n"; break;
