@@ -20,14 +20,14 @@ public:
         activity_type = "default activity_type";
     }
 
-    Client(const std::string& a, const std::string& b, const std::string& c,
-    const std::string& d, const std::string& e) 
+    Client(const std::string& company_name, const std::string& owner_name, const std::string& phone_number,
+    const std::string& address, const std::string& activity_type) 
     {
-        company_name = a;
-        owner_name = b;
-        phone_number = c;
-        address = d;
-        activity_type = e;
+        this->company_name = company_name;
+        this->owner_name = owner_name;
+        this->phone_number = phone_number;
+        this->address = address;
+        this->activity_type = activity_type;
     }
 
     void read_from_cin() 
